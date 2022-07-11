@@ -8,19 +8,19 @@
   <body>
     <h1>EVENT EXAMPLE</h1>
     <input type="text" placeholder="Enter your name" onkeyup="demoKeyboard(event)" />
-    <input type="button" id="fjeisfjief" value="Click me" onclick="demoEvent(event)" />
+    <input type="button" id="fjeisfjief" value="Search" onclick="demoEvent(event)" />
     <button>Click me</button>
     <!-- equivalent! -->
     <input type="submit" value="Submit data" />
     <!--refreshes your page if attached to form-->
     <input type="number" placeholder="Enter a price" />
-    <input type="color" />
+    <input type="color" onchange="colorDemo(event)" />
 
     <h1>FORM EXAMPLE</h1>
     <form id="create-user">
       <!-- required doesn't work without form! -->
-      <input required type="text" placeholder="name" />
-      <input required type="text" placeholder="last name" />
+      <input required type="text" id="name" placeholder="name" />
+      <input required type="text" id='email' placeholder="email" />
       <input required type="date" placeholder="birthday" />
       <input required type="password" placeholder="password" />
       <!-- <input type="button" value="click" for="create-user" /> NO REFRESH -->

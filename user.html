@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sign up to my fake website</h1>
+
+    <form onsubmit="createUser(event)" id="fake-signup">
+      <input required onkeyup="buildUser(event)" type="text" id="name" placeholder="Enter name" />
+      <input required onkeyup="buildUser(event)" type="text" id="last_name" placeholder="Enter Lastname" />
+      <input required onkeyup="buildUser(event)" type="email" id="email" placeholder="Enter email" />
+      <input required onchange="buildUser(event)" type="date" id="birthday" />
+      <input required onkeyup="buildUser(event)" type="password" id="password" placeholder="Enter password" />
+      <input required onkeyup="buildUser(event)"
+        type="password"
+        id="password_confirm"
+        placeholder="Enter password"
+      />
+      
+      <input required onkeyup="buildUser(event)" type="text" id="profile_image" placeholder="Enter image url " />
+      <div class="error"></div> 
+      <input type="submit" value="Create user" for="fake-signup">
+    </form>
+
+    <div class="user-data">
+        
+    </div>
+
+    <script src="./user.js"></script>
+  </body>
+</html>
