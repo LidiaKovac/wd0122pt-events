@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>EVENT EXAMPLE</h1>
+    <input type="text" placeholder="Enter your name" onkeyup="demoKeyboard(event)" />
+    <input type="button" id="fjeisfjief" value="Click me" onclick="demoEvent(event)" />
+    <button>Click me</button>
+    <!-- equivalent! -->
+    <input type="submit" value="Submit data" />
+    <!--refreshes your page if attached to form-->
+    <input type="number" placeholder="Enter a price" />
+    <input type="color" />
+
+    <h1>FORM EXAMPLE</h1>
+    <form id="create-user">
+      <!-- required doesn't work without form! -->
+      <input required type="text" placeholder="name" />
+      <input required type="text" placeholder="last name" />
+      <input required type="date" placeholder="birthday" />
+      <input required type="password" placeholder="password" />
+      <!-- <input type="button" value="click" for="create-user" /> NO REFRESH -->
+      <input type="submit" value="click" for="create-user" /> REFRESH
+    </form>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
